@@ -65,7 +65,7 @@ const handleSubmit = (event) => {
             <section>
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contactez-moi</h2>
-                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Vous avez un problème technique ? Vous voulez envoyer des commentaires sur une fonctionnalité beta ? Vous avez besoin de détails sur notre plan d'affaires ? Faites-le nous savoir.</p>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Avez-vous des questions ou des retours concernant mes services ? Que ce soit un problème technique, des commentaires sur une fonctionnalité bêta, ou des informations sur mon plan d'affaires, je sommes là pour vous aider. N'hésitez pas à me contacter !</p>
                 <form @submit="handleSubmit" class="space-y-8">
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
