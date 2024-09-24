@@ -34,8 +34,8 @@ const handleSubmit = (event) => {
             </div>
         </section>
         <section class="profil" id="profil">
-            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white"> "L'innovation est la clé pour transformer des <span class="text-blue-600 dark:text-blue-500"> idées en succès</span>"</h1>
-            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Bonjour, je m'appelle Simon Maigrot, actuellement en deuxième année à Epitech Technology à Bruges, je me consacre également au développement web en freelance, alliant théorie et pratique.</p>
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Bonjour, je suis Simon Maigrot, développeur passioné par le <span class="text-blue-600 dark:text-blue-500">web</span></h1>
+            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Actuellement en deuxième année à Epitech Technology à Bruges, je me consacre également au développement web en freelance, alliant théorie et pratique.</p>
             <slider class="sliderr" />
         </section>
         <section class="projets" id="projets">
@@ -51,7 +51,7 @@ const handleSubmit = (event) => {
                     </div>
                     <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
                         <div class="font-manrope font-bold text-5xl text-white mb-5 text-center ">4 ans</div>
-                        <span class="text-xl text-white text-center block ">Expérience</span>
+                        <span class="text-xl text-white text-center block ">Aprentissage</span>
                     </div>
                     <div class="w-full lg:w-1/4 ">
                         <div class="font-manrope font-bold text-5xl text-white mb-5 text-center ">2500+</div>
