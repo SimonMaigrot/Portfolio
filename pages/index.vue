@@ -34,7 +34,7 @@ const handleSubmit = (event) => {
             </div>
         </section>
         <section class="profil" id="profil">
-            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Bonjour, je suis Simon Maigrot, développeur passionné par le <span class="text-blue-600 dark:text-blue-500">web</span></h1>
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Bonjour,<br><br> je suis Simon Maigrot, développeur passionné par le <span class="text-blue-600 dark:text-blue-500">web</span></h1>
             <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Actuellement en deuxième année à Epitech Technology à Bruges, je me consacre également au développement web en freelance, alliant théorie et pratique.</p>
             <slider class="sliderr" />
         </section>
