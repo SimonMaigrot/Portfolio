@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 
-const isTextBlack = ref(false);
+const isMenuOpen = ref(false);
 
 const handleScroll = (event: Event) => {
     event.preventDefault();
@@ -11,30 +11,31 @@ const handleScroll = (event: Event) => {
     if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
     }
+
+    if (window.innerWidth <= 768) {
+        isMenuOpen.value = false;
+    }
 };
 
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <template>
     <div class="navbar">
-        <ul>
+        <div class="burger-menu" @click="toggleMenu">
+            <div :class="{'line': true, 'active': isMenuOpen}" v-for="n in 3" :key="n"></div>
+        </div>
+        <ul :class="{'open': isMenuOpen}">
             <div class="link">
                 <a href="#landing" @click="handleScroll">Accueil</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15">
-                    <path fill="white" d="m8.146 9.146l-.353.354l.707.707l.354-.353zM10.5 7.5l.354.354l.353-.354l-.353-.354zM8.854 5.146L8.5 4.793l-.707.707l.353.354zm0 4.708l2-2l-.708-.708l-2 2zm2-2.708l-2-2l-.708.708l2 2zM10.5 7H4v1h6.5z" />
-                </svg>
             </div>
             <div class="link">
                 <a href="#profil" @click="handleScroll">Profil</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15">
-                    <path fill="white" d="m8.146 9.146l-.353.354l.707.707l.354-.353zM10.5 7.5l.354.354l.353-.354l-.353-.354zM8.854 5.146L8.5 4.793l-.707.707l.353.354zm0 4.708l2-2l-.708-.708l-2 2zm2-2.708l-2-2l-.708.708l2 2zM10.5 7H4v1h6.5z" />
-                </svg>
             </div>
             <div class="link">
                 <a href="#projets" @click="handleScroll">Projets</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15">
-                    <path fill="white" d="m8.146 9.146l-.353.354l.707.707l.354-.353zM10.5 7.5l.354.354l.353-.354l-.353-.354zM8.854 5.146L8.5 4.793l-.707.707l.353.354zm0 4.708l2-2l-.708-.708l-2 2zm2-2.708l-2-2l-.708.708l2 2zM10.5 7H4v1h6.5z" />
-                </svg>
             </div>
             <div class="contact">
                 <a href="#contact" @click="handleScroll">Contact</a>
@@ -44,7 +45,6 @@ const handleScroll = (event: Event) => {
 </template>
 
 <style scoped>
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 .navbar {
@@ -58,11 +58,45 @@ const handleScroll = (event: Event) => {
     margin-top: 15px;
 }
 
-.navbar ul {
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.burger-menu .line.active:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+.burger-menu .line.active:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu .line.active:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+ul {
     display: flex;
     font-family: 'League Spartan';
     font-weight: 400;
     font-size: 20px;
+    list-style: none;
+    gap: 20px;
+}
+
+ul.open {
+    display: block;
 }
 
 .navbar a {
@@ -106,4 +140,36 @@ const handleScroll = (event: Event) => {
     font-size: 16px;
 }
 
+/* Media Query for mobile */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    ul.open {
+        display: flex;
+    }
+
+    .link {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .contact {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+}
 </style>

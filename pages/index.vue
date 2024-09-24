@@ -20,7 +20,7 @@ const scrollToProfil = () => {
                 <a href="#profil" class="decouvrir" @click.prevent="scrollToProfil">Découvrir</a>
             </div>
             <div class="landing-right">
-                <img src="assets/cloud.png" alt="cloud">
+                <img src="assets/cloud.png" alt="cloud" class="cloud">
                 <img src="assets/pluie.gif" alt="rain" class="rain">
             </div>
         </section>
@@ -48,7 +48,7 @@ const scrollToProfil = () => {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,22 +56,49 @@ const scrollToProfil = () => {
 }
 
 .landing-left {
-    width: 50%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
-    padding-left: 100px;
+    padding-left: 0px;
+    padding-top: 150px;
+}
+
+.landing-left h1 {
+    font-size: 13vw;
+}
+
+.landing-left p {
+    font-size: 4vw;
 }
 
 .landing-right {
-    width: 50%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+.rain {
+    width: 30vw;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
 }
 
 .projets {
@@ -143,13 +170,6 @@ const scrollToProfil = () => {
     animation: slideInRight 1s forwards;
 }
 
-.rain {
-    z-index: -1;
-    position: absolute;
-    width: 20%;
-    top: 440px;
-}
-
 @keyframes slideInLeft {
     from {
         transform: translateX(-100%);
@@ -169,6 +189,54 @@ const scrollToProfil = () => {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .landing-left {
+        width: 50%;
+        padding-left: 100px;
+        align-items: flex-start;
+        padding-top: 0px;
+    }
+
+    .landing-left h1 {
+        font-size: 80px;
+    }
+
+    .landing-left p {
+        font-size: 25px;
+    }
+
+
+    .landing-right {
+        display: block;
+    }
+
+    .landing-right {
+        width: 50%;
+    }
+
+    .landing {
+        flex-direction: row;
+    }
+
+    .cloud {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40vw;
+    }
+
+    .rain {
+        width: 24vw;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
     }
 }
 </style>
