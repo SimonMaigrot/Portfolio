@@ -43,27 +43,27 @@ onBeforeUnmount(() => {
         <div :class="['navbar', { 'scrolled': isScrolled }]">
             <li class="navbarLi">
                 <a 
-                    href="#" 
+                    href="/" 
                     :class="{ 'highlight': activeLink === 'Work' }"
                     @click="setActiveLink('Work')"
                 >Work</a>
                 <a 
-                    href="#"
+                    href="/about"
                     :class="{ 'highlight': activeLink === 'About' }"
                     @click="setActiveLink('About')"
                 >About</a>
                 <a 
-                    href="#"
-                    :class="{ 'highlight': activeLink === 'Play' }"
-                    @click="setActiveLink('Play')"
-                >Play</a>
+                    href="/tools"
+                    :class="{ 'highlight': activeLink === 'Tools' }"
+                    @click="setActiveLink('Tools')"
+                >Tools</a>
                 <a 
-                    href="#"
+                    href="/notes"
                     :class="{ 'highlight': activeLink === 'Notes' }"
                     @click="setActiveLink('Notes')"
                 >Notes</a>
                 <a 
-                    href="#"
+                    href="/contact"
                     :class="{ 'highlight': activeLink === 'Contact' }"
                     @click="setActiveLink('Contact')"
                 >Contact</a>

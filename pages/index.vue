@@ -134,23 +134,6 @@ const scrollToSection = (id: string) => {
     text-align: center;
 }
 
-h1 {
-    color: #8fdcc2;
-    font-weight: lighter;
-    font-size: 10vw;
-    font-family: Abril Fatface;
-    font-weight: lighter;
-    line-height: 1.1;
-    z-index: 10;
-}
-
-p {
-    margin-top: 50px;
-    color: #d4ede4;
-    z-index: 10;
-    font-size: clamp(1rem, .8852rem + .4898vw, 1.375rem);
-}
-
 .profile {
     display: flex;
     flex-direction: column;
