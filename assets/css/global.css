@@ -35,6 +35,14 @@ h2 {
     z-index: 10;
 }
 
+h3 {
+    color: #8fdcc2;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 1.1;
+    z-index: 10;
+}
+
 p {
     margin-top: 50px;
     color: #d4ede4;
