@@ -7,47 +7,50 @@
             </div>
             <div class="detailsContainer">
                 <div class="details">
-                    <img src="assets/defaultProfile.jpg" alt="profileImage" class="profileImage">
+                    <img src="assets/moi.jpg" alt="profileImage" class="profileImage">
                     <div>
-                        <h2>I'm a Product Designer working remotely from 8°C Dublin, Ireland.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, recusandae nisi corporis perspiciatis, dolore porro expedita, quasi voluptatum natus voluptas exercitationem temporibus commodi ducimus dignissimos ipsum consequuntur inventore cum blanditiis!</p>
+                        <h2>I'm a web developper working remotely from Bordeaux, France.</h2>
+                        <p>I am currently a second-year student at Epitech Technology in Bruges, where I am honing my skills in software engineering and web development. Alongside my studies, I work as a freelance web developer, helping clients bring their ideas to life through modern and responsive websites. Balancing academic learning with real-world projects allows me to constantly grow as a developer while delivering high-quality results to my clients.</p>
                     </div>
                 </div>
             </div>
             <div class="collaboration">
                 <div class="collaborationText">
-                    <h2>Let's collaborate if you're committed to sustainability, education, equality, or carbon neutrality.</h2>
-                    <p>I believe we should leave this Earth as good as or better than we found it for future generations; my goal is to contribute to those ideals in whatever way I can. If you feel the same, I'd love to talk.</p>
+                    <h2>Let’s boost your business together.</h2>
+                    <p>
+                        I specialize in creating tailored strategies to increase your company’s conversion rates and build a strong online presence. Whether it’s enhancing your brand visibility or engaging your audience effectively, I’m here to help turn your vision into reality.
+                    </p>
                 </div>
                 <div class="collaborationDiv">
                     <div class="collaborationDivTop">
                         <div>
-                            <h2>Make it</h2>
-                            <p>I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser is worth its weight. Design tools only carry you so far; the rest should be realized with a link my team can rally around.</p>
+                            <h2>Bring Ideas to Life</h2>
+                            <p>I design intuitive wireframes and prototypes, turning concepts into reality. Static design tools are just the starting point; the real value comes from creating interactive designs that feel tangible and impactful.</p>
                         </div>
                         <div>
-                            <h2>Collaborate</h2>
-                            <p>Good design is not created in a vacuum but rather in a shared space. It must be facilitated and iterated upon as a team. I aim to include stakeholders in my design process and create a collaborative environment that welcomes and encourages feedback.</p>
+                            <h2>Collaborate with you</h2>
+                            <p>Great design happens through open communication and collaboration. I work closely with my clients, ensuring their feedback is integrated at every step to create solutions that truly reflect their vision.</p>
                         </div>
                     </div>
                     <div class="collaborationDivTop">
                         <div>
-                            <h2>Accessible FTW</h2>
-                            <p>I aim to make everything I design accessible to all for one main reason - it's the right thing to do. Accessible products benefit the many, not the few.</p>
+                            <h2>Design for Everyone</h2>
+                            <p>Accessibility is central to everything I create. Inclusive designs don’t just serve a few—they create meaningful experiences for everyone.</p>
                         </div>
                         <div>
-                            <h2>Keep experimenting</h2>
-                            <p>Everything I create is subject to change and experimentation. Not everything will work, but it's worth trying - and learning from what doesn't.</p>
+                            <h2>Evolve Through Experimentation</h2>
+                            <p>Every project is an opportunity to explore, experiment, and refine. Each iteration brings us closer to designs that inspire and deliver real results.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-center">
                     <div class="w-[70%]">
-                        <p>Before I stepped into the world of product design, I was a web developer. One of my earliest jobs involved writing HTML emails, in a time before email linters. Lots of wishing, hoping, and finger crossing that your email arrived in a recipient's inbox in one piece.
-    
-    Coding emails forced me to understand how HTML and CSS play together, a skill set I've carried and kept fresh in the years since. My side project work is just an excuse to satisfy my curiosity about new technologies and understand how the web is moving forward.
-    
-    Outside work, I enjoy good coffee near my home by the sea, listening to and playing music, exploring the world with my partner, and playing with my Labrottie pup, Louie.</p>
+                        <p>From Internship to Freelance
+My six-month internship in web development at Wakatepe played a pivotal role in shaping my freelance journey. During this time, I focused on continuously improving the websiteand gained hands-on experience with tools, frameworks, and project workflows. Collaborating with experienced developer allowed me to understand best practices and refine my approach to solving real-world challenges.
+
+The diversity of projects I worked on at Wakatepe (FrontEnd and Backend) gave me the confidence to handle complex tasks independently. It also inspired me to take the leap into freelancing, where I could apply these skills to help clients bring their ideas to life.
+
+This experience taught me the importance of adaptability, effective communication, and delivering results that align with a client’s vision—values that now define my freelance work.</p>
                     </div>
                 </div>
             </div>
@@ -90,6 +93,8 @@
 
 .profileImage {
     width: 300px;
+    height: 400px;
+    object-fit: cover;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
 }
