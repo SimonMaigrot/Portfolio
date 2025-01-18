@@ -110,6 +110,8 @@ onBeforeUnmount(() => {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: hsla(158, 23%, 18%, .7);
+    backdrop-filter: blur(20px) saturate(1.7);
 }
 
 .navbarLi {
