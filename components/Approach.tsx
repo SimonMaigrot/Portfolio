@@ -13,6 +13,7 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
+          icon={<></>}
           title="Planning & Strategy"
           des="We'll collaborate to map out your website's goals, target audience, 
           and key functionalities. We'll discuss things like site structure, 
@@ -25,6 +26,7 @@ const Approach = () => {
           />
         </Card>
         <Card
+          icon={<></>}
           title="Development & Progress Update"
           des="Once we agree on the plan, I cue my lofi playlist and dive into
           coding. From initial sketches to polished code, I keep you updated
@@ -46,6 +48,7 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
+          icon={<></>}
           title="Development & Launch"
           des="This is where the magic happens! Based on the approved design, 
           I'll translate everything into functional code, building your website
