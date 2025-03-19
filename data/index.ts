@@ -181,7 +181,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "www.linkedin.com/in/simon-maigrot-73254b29a"
+    link: "https://linkedin.com/in/simon-maigrot-73254b29a"
   },
   {
     id: 4,
