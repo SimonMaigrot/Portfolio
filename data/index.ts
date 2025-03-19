@@ -75,15 +75,15 @@ export const projects = [
     title: "Formagold",
     des: "FormaGold – The Business Coaching Marketplace for Entrepreneurs & Experts.",
     img: "/formagold.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/lucide.svg"],
     link: "https://formagold.fr",
   },
   {
     id: 2,
-    title: "Wakatépé",
+    title: "Internship - Wakatépé",
     des: "Wakatépé – Empowering Students in France to Find Their Educational Pathways.",
     img: "/wakatepe.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/vue.svg", "/nuxt.svg", "/ts.svg", "/php.svg", "/symfony.svg"],
     link: "https://wakatepe.fr",
   },
 ];
