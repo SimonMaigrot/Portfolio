@@ -86,6 +86,14 @@ export const projects = [
     iconLists: ["/vue.svg", "/nuxt.svg", "/ts.svg", "/php.svg", "/symfony.svg"],
     link: "https://wakatepe.fr",
   },
+  {
+    id: 3,
+    title: "Toolsy",
+    des: "Toolsy – a peer-to-peer tool rental platform",
+    img: "/toolsy.png",
+    iconLists: ["/next.svg", "/ts.svg"],
+    link: "https://toolsy-rouge.vercel.app/",
+  },
 ];
 
 export const testimonials = [

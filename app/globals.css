@@ -67,10 +67,10 @@
 }
 
 .works {
-  border: 1px solid rgba(72, 8, 175, 0.531);
   padding: 20px;
   border-radius: 20px;
   transition: .3s;
+  cursor: pointer;
 }
 
 .works:hover {
